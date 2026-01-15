@@ -1,5 +1,7 @@
 # Maine SPA Center
 
-1. npm install
-2. npm run dev
-3. Crea un .env basado en .env.example
+1. Extrae los archivos.
+2. Ejecuta 'npm install'.
+3. Ejecuta 'npm run dev'.
+
+Despliegue: Sube este código a GitHub y conéctalo a Vercel.
