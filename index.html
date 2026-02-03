@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maine SPA Center - Bienestar y Armonía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              script: ['"Great Vibes"', 'cursive'],
+            },
+            colors: {
+              primary: {
+                50: '#fdfcfb',
+                100: '#f9f6f2',
+                200: '#f1ede6',
+                300: '#e3dcd1',
+                400: '#c8b2a2', // Soft Taupe
+                500: '#a38d7d', // Muted Gold/Taupe
+                600: '#8e7d6f', // Deep Taupe (Principal Sobrio)
+                700: '#75665a',
+                800: '#5c5147',
+                900: '#2d241e', // Ébano Cálido
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #fdfcfb;
+        color: #2d241e;
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-out;
+      }
+      .animate-slide-down {
+        animation: slideDown 0.3s ease-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      /* Sombras más suaves para estética sobria */
+      .shadow-soft {
+        box-shadow: 0 4px 20px -2px rgba(45, 36, 30, 0.05);
+      }
+      .shadow-luxury {
+        box-shadow: 0 20px 40px -10px rgba(45, 36, 30, 0.12);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.39.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
